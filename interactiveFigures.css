@@ -1,0 +1,233 @@
+.pattern-delineation-wrapper {
+    position: relative;
+    width: 100%;
+    height:300px;
+    display: inline-block;
+}
+
+.middle {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 2px;
+  }
+
+.figure-wrapper{
+    width: 100%;
+  }
+
+p {
+    text-align: justify;
+}
+
+.pattern-delineation-wrapper .pattern-delineation-top {
+    display: none;
+    width: auto;
+    height: 100%; 
+    position:absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 98;
+}
+.pattern-delineation-wrapper .pattern-delineation {
+    width: auto;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.hitbox:hover .pattern-delineation-top {
+    display: inline;
+}
+
+.figure-legend-text label{
+    text-align: center;
+    margin-bottom: 3em;
+    text-decoration-line: underline;
+    font-size: 0.9em;
+}
+
+.figure-legend-text .just{
+    text-align: justify;
+}
+
+
+
+
+
+.regionalization-animation-wrapper {
+    height: 325px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;}
+
+
+.regionalization-animation {
+    width: auto;
+    height: 100%; }
+
+
+.indicator-image-wrapper{
+    display: block;
+    position: relative;
+    overflow: hidden; 
+}
+
+.indicator-formula-wrapper{
+    text-align: center;
+}
+
+.indicator-formula{
+    width: auto;
+    height: 21px;
+}
+
+/* Larger than phone */
+@media(min-width: 550px) {
+    .indicator-formula{
+      height: 14px;
+      }
+    .pattern-delineation-wrapper{
+      height: 400px;
+    }
+    .regionalization-animation-wrapper{
+      height: 400px;
+    }
+
+    .indicator-definition p{
+        min-height: 410px;
+    }
+    .middle{
+        display:none;
+      }
+  }
+
+/* Larger than tablet */
+@media(min-width: 750px) {
+  .indicator-formula{
+    height: 19px;
+    }
+  .indicator-definition p{
+    min-height: 300px;
+    }
+}
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .indicator-formula{
+        height: 25px;
+        }
+
+    .indicator-definition p{
+        min-height: 220px;
+        }
+}
+
+.indicator-formula-wrapper2{
+    text-align: center;
+}
+
+.indicator-formula2{
+    width: auto;
+    height: 150px;
+}
+
+
+.indicator-title{
+    text-align: center;
+}
+
+.indicator-image {
+    width: 100%;
+    height: auto; }
+
+.figure-axis-label-x{
+    text-anchor: end; /* This is an svg, thus we use fill instead of color */
+}
+
+.figure-axis-label-y{
+    text-anchor: start;/* This is an svg, thus we use fill instead of color */
+    /* text-anchor is default like this. */
+}
+
+.figure-title{
+    font-size: 10px;
+    font-weight: bold;
+    fill:black; /* This is an svg, thus we use fill instead of color */
+}
+
+.figure-legend{
+    overflow: visible;
+    display: block;
+}
+
+.figure-tick{
+    font-size: 10px;
+}
+
+.figure-legend-size-g{
+    stroke: #ccc;
+    fill:none; /* This is an svg, thus we use fill instead of color */
+}
+
+.tooltip-item{
+    display:block;
+    font-size: 10px;
+}
+
+.tooltip-title{
+    display:block;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.citystats-item{
+    display:block;
+    font-size: 10px;
+}
+
+.citystats-title{
+    display:block;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* .figure-map{
+    border: 1px solid #eee;
+    border-radius: 4px;
+} */
+
+@media (min-width: 550px) {
+    .figure-title{
+        font-size: 10px;}
+    .tooltip-item{
+        font-size: 11px;}
+    .tooltip-title{
+        font-size: 13px;}
+
+    .citystats-item{
+        font-size: 11px;}
+    .citystats-title{
+        font-size: 13px;}
+}
+
+@media (min-width: 750px) {
+    .figure-title{
+        font-size: 13px;}
+    .citystats-item{
+        font-size: 12px;}
+    .citystats-title{
+        font-size: 15px;}
+    }
