@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Characterizing segregation patterns</title>
+  <meta name="description" content="The personal website of Lucas Spierenburg.">
+  <meta name="author" content="Lucas Spierenburg">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/skeleton.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+  <link rel="stylesheet" href="../../css/interactiveFigures.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/svg" href="../../images/favicon.svg">
+
+  <!-- <script src="../../d3js/d3.v6.js"></script> -->
+  <script src="https://d3js.org/d3.v6.js"></script>
+  <style>
+
+   .toolTip {
+       position: absolute;
+       display: none;
+       min-width: 30px;
+       max-width: 240px;
+       border-radius: 4px;
+       height: auto;
+       background: rgba(250,250,250, 0.9);
+       border: 1px solid #DDD;
+       padding: 4px 8px;
+       font-size: .85rem;
+       text-align: left;
+       z-index: 1000;}
+ </style>
+</head>
+
+
+<body class = "has-docked-nav">
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="project-section">
+
+      <label class="dropdown-label">Select a city:</label>
+      <select id="selectCity"><option value=""></option></select>
+      <div class="figure-wrapper" id="figure-interactive" >
+        <script type="module" src="seg_path_nth.js"></script>
+      </div>
+      <span class = "figure-legend-text"> 
+        <label>
+        Figure: Relation between segregation indicators in Dutch municipalities (top plot), along with three observed segregation patterns (bottom
+        three maps).
+        </label>
+      </span>
+
+    </div>
+
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
